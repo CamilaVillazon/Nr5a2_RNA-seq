@@ -1,0 +1,683 @@
+Sample sheet found and header is ok!
+Using profile /home/seisbio/miniforge/envs/snakePipes/lib/python3.12/site-packages/snakePipes/shared/profiles/local for setting default command line arguments.
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+Assuming unrestricted shared filesystem usage.
+host: maggie
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Removing incomplete Conda environment /home/seisbio/miniforge/envs/snakePipes/lib/python3.12/site-packages/snakePipes/shared/rules/envs/rna_seq.yaml...
+Removing incomplete Conda environment /home/seisbio/miniforge/envs/snakePipes/lib/python3.12/site-packages/snakePipes/shared/rules/envs/noncoding.yaml...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                            count
+---------------------------  -------
+DESeq2                             1
+TEcounts                          24
+all                                1
+bamCoverage_RPKM                  24
+bamCoverage_raw                   24
+bamCoverage_scaleFactors          24
+bamCoverage_unique_mappings       24
+bamPE_fragment_size                1
+estimateReadFiltering             24
+link_bam                          24
+multiBamSummary_bed                1
+multiBigwigSummary_bed             1
+multiQC                            1
+plotCorr_bed_pearson               1
+plotCorr_bed_spearman              1
+plotEnrichment                     1
+plotPCA                            1
+samtools_index_filtered_bam       24
+sortBams                          24
+total                            226
+
+Select jobs to execute...
+Execute 8 jobs...
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT12_V_rep4_hem.bam
+output: EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam
+jobid: 49
+reason: Missing output files: EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam
+wildcards: sample=ZT12_V_rep4_hem
+resources: mem_mb=1000, mem_mib=7630, disk_mb=8958, disk_mib=8544, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT0Tx_Rep2.bam
+output: EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam
+jobid: 2
+reason: Missing output files: EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam
+wildcards: sample=ZT0Tx_Rep2
+resources: mem_mb=1000, mem_mib=7630, disk_mb=12975, disk_mib=12374, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT0_Tx_rep3_hem.bam
+output: EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam
+jobid: 17
+reason: Missing output files: EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam
+wildcards: sample=ZT0_Tx_rep3_hem
+resources: mem_mb=1000, mem_mib=5080, disk_mb=5326, disk_mib=5080, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT12_V_rep3_hem.bam
+output: EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam
+jobid: 47
+reason: Missing output files: EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam
+wildcards: sample=ZT12_V_rep3_hem
+resources: mem_mb=1000, mem_mib=5856, disk_mb=6140, disk_mib=5856, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT0_V_rep4_hem.bam
+output: EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam
+jobid: 25
+reason: Missing output files: EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam
+wildcards: sample=ZT0_V_rep4_hem
+resources: mem_mb=1000, mem_mib=6978, disk_mb=7316, disk_mib=6978, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT0Tx_Rep3.bam
+output: EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam
+jobid: 5
+reason: Missing output files: EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam
+wildcards: sample=ZT0Tx_Rep3
+resources: mem_mb=1000, mem_mib=7630, disk_mb=11877, disk_mib=11327, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT12Tx_Rep2.bam
+output: EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam
+jobid: 27
+reason: Missing output files: EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam
+wildcards: sample=ZT12Tx_Rep2
+resources: mem_mb=1000, mem_mib=7630, disk_mb=12780, disk_mib=12188, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+[Thu Apr 16 11:44:31 2026]
+localrule link_bam:
+input: /home/cvillazon/ncRNA_SNAKEPipes_out/EXTERNAL_BAM/ZT12Tx_Rep4.bam
+output: EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam
+jobid: 31
+reason: Missing output files: EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam
+wildcards: sample=ZT12Tx_Rep4
+resources: mem_mb=1000, mem_mib=7630, disk_mb=9815, disk_mib=9361, tmpdir=/tmp, mem=1G, time=300, partition=bioinfo
+
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+
+---- This analysis has been done using snakePipes version 3.0.0 ----
+Sample sheet found and header is ok!
+host: maggie
+host: maggie
+host: maggie
+host: maggie
+host: maggie
+host: maggie
+host: maggie
+host: maggie
+[Thu Apr 16 11:44:32 2026]
+Finished job 27.
+1 of 226 steps (0.4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12Tx_Rep2.cntTable
+jobid: 26
+benchmark: TEcount/.benchmark/ZT12Tx_Rep2.benchmark
+reason: Missing output files: TEcount/ZT12Tx_Rep2.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam
+wildcards: sample=ZT12Tx_Rep2
+resources: mem_mb=16000, mem_mib=7630, disk_mb=14065, disk_mib=13414, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+[Thu Apr 16 11:44:32 2026]
+Finished job 5.
+2 of 226 steps (1%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 25.
+3 of 226 steps (1%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 31.
+4 of 226 steps (2%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 49.
+5 of 226 steps (2%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 47.
+6 of 226 steps (3%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 17.
+7 of 226 steps (3%) done
+[Thu Apr 16 11:44:32 2026]
+Finished job 2.
+8 of 226 steps (4%) done
+Select jobs to execute...
+Execute 7 jobs...
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0Tx_Rep2.cntTable
+jobid: 1
+benchmark: TEcount/.benchmark/ZT0Tx_Rep2.benchmark
+reason: Missing output files: TEcount/ZT0Tx_Rep2.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam
+wildcards: sample=ZT0Tx_Rep2
+resources: mem_mb=16000, mem_mib=7630, disk_mb=14260, disk_mib=13600, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12Tx_Rep4.cntTable
+jobid: 30
+benchmark: TEcount/.benchmark/ZT12Tx_Rep4.benchmark
+reason: Missing output files: TEcount/ZT12Tx_Rep4.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam
+wildcards: sample=ZT12Tx_Rep4
+resources: mem_mb=16000, mem_mib=7630, disk_mb=11100, disk_mib=10586, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12_V_rep4_hem.cntTable
+jobid: 48
+benchmark: TEcount/.benchmark/ZT12_V_rep4_hem.benchmark
+reason: Missing output files: TEcount/ZT12_V_rep4_hem.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam
+wildcards: sample=ZT12_V_rep4_hem
+resources: mem_mb=16000, mem_mib=7630, disk_mb=10243, disk_mib=9769, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12_V_rep3_hem.cntTable
+jobid: 46
+benchmark: TEcount/.benchmark/ZT12_V_rep3_hem.benchmark
+reason: Missing output files: TEcount/ZT12_V_rep3_hem.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam
+wildcards: sample=ZT12_V_rep3_hem
+resources: mem_mb=16000, mem_mib=7082, disk_mb=7425, disk_mib=7082, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0_Tx_rep3_hem.cntTable
+jobid: 16
+benchmark: TEcount/.benchmark/ZT0_Tx_rep3_hem.benchmark
+reason: Missing output files: TEcount/ZT0_Tx_rep3_hem.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam
+wildcards: sample=ZT0_Tx_rep3_hem
+resources: mem_mb=16000, mem_mib=6305, disk_mb=6611, disk_mib=6305, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0_V_rep4_hem.cntTable
+jobid: 24
+benchmark: TEcount/.benchmark/ZT0_V_rep4_hem.benchmark
+reason: Missing output files: TEcount/ZT0_V_rep4_hem.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam
+wildcards: sample=ZT0_V_rep4_hem
+resources: mem_mb=16000, mem_mib=7630, disk_mb=8601, disk_mib=8203, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+
+[Thu Apr 16 11:44:32 2026]
+localrule TEcounts:
+input: EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0Tx_Rep3.cntTable
+jobid: 4
+benchmark: TEcount/.benchmark/ZT0Tx_Rep3.benchmark
+reason: Missing output files: TEcount/ZT0Tx_Rep3.cntTable; Input files updated by another job: EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam
+wildcards: sample=ZT0Tx_Rep3
+resources: mem_mb=16000, mem_mib=7630, disk_mb=13162, disk_mib=12553, tmpdir=/tmp, mem=16G, time=300, partition=bioinfo
+
+Activating conda environment: ../../seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+Select jobs to execute...
+Waiting for more resources.
+Waiting for more resources.
+Waiting for more resources.
+Waiting for more resources.
+Waiting for more resources.
+Waiting for more resources.
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT12Tx_Rep2
+# BAM file = EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT12Tx_Rep4
+# BAM file = EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT0Tx_Rep3
+# BAM file = EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT12_V_rep3_hem
+# BAM file = EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT12_V_rep4_hem
+# BAM file = EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT0Tx_Rep2
+# BAM file = EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT0_V_rep4_hem
+# BAM file = EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+INFO  @ Thu, 16 Apr 2026 11:44:33:
+# ARGUMENTS LIST:
+# name = TEcount/ZT0_Tx_rep3_hem
+# BAM file = EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam
+# GTF file = /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf
+# TE file = rmsk.gtf
+# multi-mapper mode = multi
+# stranded = no
+# number of iteration = 100
+# Alignments grouped by read ID = True
+
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Processing GTF files ...
+
+INFO  @ Thu, 16 Apr 2026 11:44:33: Building gene index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:54:15: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 11:54:30: Building TE index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:54:31: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 11:54:47: Building TE index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:56:38: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 11:56:54: Building TE index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:57:00: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 11:57:15: Building TE index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:58:34: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 11:58:50: Building TE index .......
+
+INFO  @ Thu, 16 Apr 2026 11:59:38: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 11:59:38:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 11:59:47: Done building gene index ......
+
+[Thu Apr 16 12:00:01 2026]
+Error in rule TEcounts:
+jobid: 30
+input: EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12Tx_Rep4.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT12Tx_Rep4.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT12Tx_Rep4
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+INFO  @ Thu, 16 Apr 2026 12:00:03: Building TE index .......
+
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 12:00:15: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 12:00:16: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:00:16:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+100000 GTF lines processed.
+200000 GTF lines processed.
+300000 GTF lines processed.
+400000 GTF lines processed.
+500000 GTF lines processed.
+600000 GTF lines processed.
+700000 GTF lines processed.
+800000 GTF lines processed.
+INFO  @ Thu, 16 Apr 2026 12:00:29: Done building gene index ......
+
+INFO  @ Thu, 16 Apr 2026 12:00:30: Building TE index .......
+
+[Thu Apr 16 12:00:40 2026]
+Error in rule TEcounts:
+jobid: 26
+input: EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12Tx_Rep2.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT12Tx_Rep2.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT12Tx_Rep2
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+INFO  @ Thu, 16 Apr 2026 12:00:45: Building TE index .......
+
+INFO  @ Thu, 16 Apr 2026 12:02:19: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:02:19:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+INFO  @ Thu, 16 Apr 2026 12:02:25: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:02:25:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+[Thu Apr 16 12:02:43 2026]
+Error in rule TEcounts:
+jobid: 1
+input: EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0Tx_Rep2.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT0Tx_Rep2.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT0Tx_Rep2
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Apr 16 12:02:49 2026]
+Error in rule TEcounts:
+jobid: 48
+input: EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12_V_rep4_hem.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT12_V_rep4_hem.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT12_V_rep4_hem
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+INFO  @ Thu, 16 Apr 2026 12:04:01: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:04:01:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+[Thu Apr 16 12:04:24 2026]
+Error in rule TEcounts:
+jobid: 24
+input: EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0_V_rep4_hem.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT0_V_rep4_hem.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT0_V_rep4_hem
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+INFO  @ Thu, 16 Apr 2026 12:05:11: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:05:11:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+[Thu Apr 16 12:05:34 2026]
+Error in rule TEcounts:
+jobid: 4
+input: EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0Tx_Rep3.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT0Tx_Rep3.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT0Tx_Rep3
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+INFO  @ Thu, 16 Apr 2026 12:05:44: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:05:44:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+INFO  @ Thu, 16 Apr 2026 12:06:00: Done building TE index ......
+
+INFO  @ Thu, 16 Apr 2026 12:06:00:
+Reading sample file ...
+
+******NOT COMPLETE*******
+If the BAM file is sorted by coordinates, please specify                                 --sortByPos and re-run!
+Error: 0
+[Exception type: SystemExit, raised in TEcount:286]
+[Thu Apr 16 12:06:09 2026]
+Error in rule TEcounts:
+jobid: 46
+input: EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT12_V_rep3_hem.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT12_V_rep3_hem.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT12_V_rep3_hem
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Apr 16 12:06:24 2026]
+Error in rule TEcounts:
+jobid: 16
+input: EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam, rmsk.gtf
+output: TEcount/ZT0_Tx_rep3_hem.cntTable
+conda-env: /home/seisbio/data/snakePipes/envs/1185c0fb763185cf6b70a90e92da0532
+shell:
+
+TEcount --format BAM --mode multi -b EXTERNAL_BAM/ZT0_Tx_rep3_hem.unsorted.bam --GTF /home/seisbio/data/snakePipes/GRCm39/annotation/genes.gtf --TE rmsk.gtf --project TEcount/ZT0_Tx_rep3_hem
+
+(one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2026-04-16T114429.415868.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
+
+!!! ERROR in ncRNAseq workflow! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+

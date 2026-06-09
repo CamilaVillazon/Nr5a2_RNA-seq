@@ -1,0 +1,2 @@
+source,native,name,p_value,significant,description,term_size,query_size,intersection_size,effective_domain_size,precision,recall,query,parents,intersections,evidences
+KEGG,KEGG:04630,JAK-STAT signaling pathway,0.036000436585047084,True,JAK-STAT signaling pathway,171,11,3,10539,0.2727272727272727,0.017543859649122806,query_1,['KEGG:00000'],"['ENSMUSG00000029231', 'ENSMUSG00000022146', 'ENSMUSG00000071713']","[['KEGG'], ['KEGG'], ['KEGG']]"

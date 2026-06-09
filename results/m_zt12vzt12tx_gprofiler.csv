@@ -1,0 +1,3 @@
+source,native,name,p_value,significant,description,term_size,query_size,intersection_size,effective_domain_size,precision,recall,query,parents,intersections,evidences
+CORUM,CORUM:6511,L1cam-Itga5 complex,0.04986768441069359,True,L1cam-Itga5 complex,1,3,1,1082,0.3333333333333333,1.0,query_1,['CORUM:0000000'],['ENSMUSG00000000555'],[['CORUM']]
+GO:CC,GO:1990706,MAD1 complex,0.049880204375764944,True,"""A protein complex involved in the assembly of the mitotic checkpoint complex that in turn inhibits the anaphase promoting complex/cyclosome (APC/C)."" [GOC:bhm, intAct:EBI-10691224, PMID:22493223, PMID:22898774]",1,9,1,25413,0.1111111111111111,1.0,query_1,['GO:0032991'],['ENSMUSG00000029554'],"[['IDA', 'IEA']]"

@@ -1,0 +1,2 @@
+source,native,name,p_value,significant,description,term_size,query_size,intersection_size,effective_domain_size,precision,recall,query,parents,intersections,evidences
+TF,TF:M02884_1,Factor: MYBL1; motif: NNNCCAACTGCCGNN; match class: 1,0.015262244997060088,True,Factor: MYBL1; motif: NNNCCAACTGCCGNN; match class: 1,12,13,2,21760,0.15384615384615385,0.16666666666666666,query_1,['TF:M02884'],"['ENSMUSG00000037278', 'ENSMUSG00000067071']","[['TF'], ['TF']]"
